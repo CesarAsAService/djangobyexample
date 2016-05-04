@@ -13,8 +13,8 @@ class Post(models.Model):
 	author = models.ForeignKey(User, related_name='blog_posts')
 	body = models.TextField()
 	publish = models.DateTimeField(default=timezone.now)
-	created = models.DateTimeField(default=auto_now_add=True)
-	updated = models.DateTimeField(default=auto_now=True)
+	created = models.DateTimeField(auto_now_add=True)
+	updated = models.DateTimeField(auto_now=True)
 	status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='rascunho')
 
 	class Meta:
