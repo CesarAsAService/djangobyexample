@@ -19,5 +19,9 @@ from core import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^posts/$', views.posts_list, name='posts_list')
+    url(r'^posts/$', views.posts_list, name='posts_list'),
+    url(r'^(?P<day>\d{2})/(?P<month>\d{2})/(?P<year>\d{4})/(?P<post>[-\w]+)/$',
+      views.post_details,
+      name='post_detail'
+      )
 ]
