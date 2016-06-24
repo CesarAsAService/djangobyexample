@@ -3,17 +3,19 @@
 {% block content %}
 
 	<main>
-		<h1>List of all posts</h1>
-		<ul>
+		<div class="inner-wrpr">
+			<h1>List of all posts</h1>
+			<ul>
 
-			{% for post in posts %}
-				<li>
-					<h2>{{ post.title }}</h2>
-					<p>{{ post.body }}</p>
-				</li>
-			{% endfor %}
+				{% for post in posts %}
+					<li>
+						<h2>{{ post.title }}</h2>
+						<p>{{ post.body }}</p>
+					</li>
+				{% endfor %}
 
-		</ul>
+			</ul>
+		</div>
 	</main>
 
 {% endblock %}

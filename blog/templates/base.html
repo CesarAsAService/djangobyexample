@@ -1,12 +1,18 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="{% static 'pure.css' %}">
 	<title>Django By Example - Blog</title>
 </head>
 	<body>
 
 		<header>
-			<h1>Django By Example</h1>
+			<div class="inner-wrpr">
+				<h1>Django By Example</h1>
+				<h2>Just a blog django project</h2>
+			</div>
 		</header>
 
 		{% block content %}

@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	color: #333;
+}
+
+body {
+	background-color: #eee;
+}
+
+
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 1em 0 .5em 0;
+}
+
+.inner-wrpr {
+	width: 90%;
+	margin: 0 auto;
+	padding: 2em 4em;
+	background-color: #fff;
+}
+
+header .inner-wrpr {
+	border-bottom: 1px solid #dadada;
+}
